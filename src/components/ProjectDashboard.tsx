@@ -57,7 +57,7 @@ export default function ProjectDashboard() {
   return (
     <TooltipProvider>
       <div className="p-6 max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">AI Lifecycle Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-6">AI Lifecycle Auditor</h1>
         
         <Tabs value={activeStage} onValueChange={(value) => setActiveStage(value as StageKey)} className="mb-8">
           <TabsList className="grid grid-cols-5 gap-4">

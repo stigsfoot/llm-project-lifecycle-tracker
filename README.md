@@ -1,6 +1,6 @@
-# LLM Project Lifecycle Tracker
+# LLM Project Lifecycle Auditor
 
-This project is a Next.js application designed to track the lifecycle of Large Language Model (LLM) projects. It helps teams manage and monitor various stages of LLM development, from initial conception to deployment and maintenance.
+This project is a Next.js application designed to audit the lifecycle of Large Language Model (LLM) projects. It helps teams manage and monitor various stages of LLM development, from initial conception to deployment and maintenance.
 
 ## Features
 
