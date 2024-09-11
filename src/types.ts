@@ -6,6 +6,7 @@ export interface Task {
   id: number;
   name: string;
   completed: boolean;
+  jiraId?: string;  
 }
 
 export type StageKey = 'setup' | 'planning' | 'execution' | 'evaluation' | 'deployment';

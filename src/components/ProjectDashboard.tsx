@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { stages, initialTasks } from '@/lib/data';
-import { Task, TaskStage } from '@/types';  // Add this import
+import { Task, TaskStage, StageKey } from '@/types';  // Update this import
 import StageContent from '@/components/StageContent';
 // Remove the following line:
 import AIAssistant from '@/components/AIAssistant';
@@ -11,13 +11,12 @@ import StageNavigation from '@/components/StageNavigation';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import { StageKey } from '@/types';  // Add this import
 
 type StageId = StageKey;
 
 export default function ProjectDashboard() {
   const [activeStage, setActiveStage] = useState<StageKey>('setup');
-  const [tasks, setTasks] = useState(initialTasks);
+  const [tasks, setTasks] = useState<Record<StageKey, Task[]>>(initialTasks);
   const [progress, setProgress] = useState<Record<string, number>>({});
 
   useEffect(() => {
